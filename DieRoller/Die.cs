@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DieRoller
 {
+    /// <summary>
+    /// Represents a single six sided die (1-6)
+    /// </summary>
     public class Die
     {
+        //Face up value 9what was rolled?)
+        //Is the die held?
+
+        //Roll (set a new random face up value)
+        
     }
 }
