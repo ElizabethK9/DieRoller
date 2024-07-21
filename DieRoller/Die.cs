@@ -11,10 +11,31 @@ namespace DieRoller
     /// </summary>
     public class Die
     {
-        //Face up value 9what was rolled?)
-        //Is the die held?
-
-        //Roll (set a new random face up value)
+        /// <summary>
+        /// The current face up value of the die.
+        /// Face Value = Number on the die (1-6)
+        /// </summary>
+        public byte FaceValue { get; set; }
         
+        /// <summary>
+        /// True if the die is currently held (held means to that it won't change)
+        /// </summary>
+        public bool IsHeld {  get; set; }
+
+        /// <summary>
+        /// Rolls the die and sets the <see cref="FaceValue">
+        /// to the new face value. Returns the new face value. 
+        /// </summary>
+        /// <returns> Returns the new random face value </returns>
+        public byte Roll() 
+        { 
+            //Generate random number.
+            //set to face value.
+            //return new number
+            // throw new NotImplementedException(); is a placeholder for now 
+            //since the Roll() is not fully set up. 
+            throw new NotImplementedException();
+        }
+
     }
 }
