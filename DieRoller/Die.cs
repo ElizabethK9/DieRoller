@@ -30,11 +30,16 @@ namespace DieRoller
         public byte Roll() 
         { 
             //Generate random number.
+            Random random = new Random();
+            byte newValue = (byte)random.Next(1, 7);
+
             //set to face value.
+            FaceValue = newValue;
+
             //return new number
-            // throw new NotImplementedException(); is a placeholder for now 
-            //since the Roll() is not fully set up. 
-            throw new NotImplementedException();
+            return FaceValue;   
+
+         
         }
 
     }
